@@ -63,7 +63,7 @@ function renderCart() {
     cartList.innerHTML = cart.map(item => 
         `<div class="cart-item">
             <p>${item.title} - $${item.price} x ${item.quantity}</p>
-            <button onclick="removeFromCart('${item.id}')">Olib tashlash</button>
+            <button onclick="removeFromCart('${item.id}')">Delete</button>
         </div>`
     ).join("");
     
