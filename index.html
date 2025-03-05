@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <input type="text" id="search" class="search-bar" placeholder="Search...">
+        <select id="categoryFilter">
+            <option value="">All</option>
+        </select>
+        <select id="priceSort">
+            <option value="">Filter</option>
+            <option value="asc">Low to High</option>
+            <option value="desc">High to Low</option>
+        </select>
+        <div class="loader" id="loader"></div>
+        <div class="products" id="productList"></div>
+    </div>
+    <div class="cart">
+        <h2>Cart</h2>
+        <div id="cartList"></div>
+        <p>Total Price: <span id="totalPrice">$0</span></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
